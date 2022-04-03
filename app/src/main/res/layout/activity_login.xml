@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.ui.login.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:clipToPadding="false"
+        android:divider="@drawable/empty_divider"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email_ph"
+            android:inputType="textEmailAddress"
+            android:text="muratsayrim@hotmail.com.tr" />
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password_ph"
+            android:inputType="textPassword"
+            android:text="123qwe" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/loginBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_weight="1"
+                android:text="@string/login" />
+
+            <Button
+                android:id="@+id/registerBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_weight="1"
+                android:text="@string/register" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
