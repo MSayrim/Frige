@@ -50,11 +50,10 @@ public class FrigeAdapter extends BaseAdapter {
         quantity = view.findViewById(R.id.quantityTV);
         lastRefill = view.findViewById(R.id.lastRefillTV);
 
-        for (FrigeItemModel itemModel : items) {
-            product.setText(itemModel.getItemID());
-            quantity.setText(itemModel.getQuantity());
-            lastRefill.setText(itemModel.getUpdateDate());
-        }
+            product.setText(items.get(i).getItemID());
+            quantity.setText(items.get(i).getQuantity());
+            lastRefill.setText(items.get(i).getUpdateDate());
+
 
 
         return view;
